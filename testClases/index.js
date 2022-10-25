@@ -1,15 +1,22 @@
-const fs = require('fs');
-const hoy = new Date ();
 
-try {
-    fs.writeFileSync('./data.txt', `${hoy}`);
-    const data = fs.readFileSync('./data.txt', 'utf-8');
-    console.log(data)
-} catch (error) {
-    console.log("fecha no valida");
-}
 
-// Realizar un programa que:
-// A) Guarde en un archivo llamado fyh.txt la fecha y hora actual.
-// B) Lea nuestro propio archivo de programa y lo muestre por consola.
-// C) Incluya el manejo de errores con try catch (progresando las excepciones con throw new Error).
+const express = require('express');
+
+const app = express();
+const PORT = 8000;
+
+app.get('/', (req, res) =>{
+    res.send("Hello World")
+});
+
+app.get('/algo', (req, res) =>{
+    res.send("esta es la ruta algo")
+});
+
+app.get('/alumnos', (req, res) =>{
+    res.json([{id: 100, name: "carla", lastName: "ramirez"}])
+});
+
+app.listen(PORT, ()=>{
+    console.log(`La app esta escuchando en el puerto http://localhost:${PORT}`)
+})

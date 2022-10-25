@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "echo \"Error: no test specified\" && exit 1",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon testClases/index.js"
   },
   "repository": {
     "type": "git",
