@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "titulo": "Remera",
+    "precio": 10,
+    "thumbnail": "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen.jpg?x=480&y=375&quality=40"
+  },
+  {
+    "titulo": "Cuerda",
+    "precio": 30,
+    "thumbnail": "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen.jpg?x=480&y=375&quality=40",
+    "id": 2
+  }
+]
